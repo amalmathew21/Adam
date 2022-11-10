@@ -11,3 +11,9 @@
     width: 40% !important;
     margin-left: 8%;
 }
+
+.whatsappchat{
+    position: fixed;
+    bottom: 05% !important;
+    left: 03% !important
+}

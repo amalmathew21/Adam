@@ -9,10 +9,15 @@ urlpatterns = [
     path('collections',views.collections, name='collections'),
     path('collections/<str:name>',views.collectionsview, name='collectionsview'),
     path('collections/<str:cate_name>/<str:prod_name>',views.productview,name='productview'),
-    
-    path('register/',authview.register, name='register'),
-    path('login/',authview.loginpage,name='loginpage'),
-    path('logout/',authview.logoutpage,name='logoutpage'),
+
+    path('register/', authview.register, name='register'),
+    path('login/', authview.loginpage, name='loginpage'),
+    path('logout/', authview.logoutpage, name='logoutpage'),
+    path('profile/<username>', authview.profile, name='profile'),
+    path('activate/<uidb64>/<token>', authview.activate, name='activate'),
+    path('password_change', authview.password_change, name='password_change'),
+    path('password_reset', authview.password_reset, name='password_reset'),
+    path('reset/<uidb64>/<token>', authview.password_reset_confirm, name='password_reset_confirm'),
     
     path('add-to-cart',cart.addtocart,name='addtocart'),
     path('cart',cart.viewcart,name='cart'),

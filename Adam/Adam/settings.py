@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'store',
     'jazzmin',
+    'crispy_forms',
+    'captcha',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +121,18 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = 'login'
+
+AUTHENTICATION_BACKENDS = ['store.backends.EmailBackend']
+
+RECAPTCHA_PUBLIC_KEY = '6LdiPuwiAAAAAPwzC713Ilu-Kf9sl7Eeepzb1Ur_'
+RECAPTCHA_PRIVATE_KEY = '6LdiPuwiAAAAAPPTS5xvQ3qbD0N4qP0J5hWGUoPJ'
+SILENCED_SYSTEM_CHECKS = ['captcha.recaptcha_test_key_error']
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
@@ -129,3 +143,15 @@ MEDIA_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     BASE_DIR / 'static'
     ]
+
+#Email
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_FROM = 'adamdichkasargod@gmail.com'
+EMAIL_HOST_USER = 'connecttoamalmathew@gmail.com'
+EMAIL_HOST_PASSWORD = 'pagbvzupxylqmael'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+PASSWORD_RESET_TIMEOUT = 12000

@@ -8,6 +8,7 @@ import os
 from django.contrib.auth.models import User
 
 
+
 # Create your models here.
 
 def get_file_path(request,filename):
@@ -102,7 +103,14 @@ class OrderItem(models.Model):
     
      
 class Profile(models.Model):
+    def image_upload_to(self, instance=None):
+        if instance:
+            return os.path.join("store", self.user, instance)
+        return None
+
+
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    image = models.ImageField(default='images/users.png', upload_to=image_upload_to)
     phone = models.CharField(max_length=150, null=False)
     address = models.TextField( null=False)
     district = models.CharField(max_length=150,null=False)
@@ -113,3 +121,5 @@ class Profile(models.Model):
     
     def __str__(self):
         return self.user.username
+    
+    
