@@ -7,13 +7,47 @@
     font-size: 14px !important;
 }
 
-.search-bar{
-    width: 40% !important;
-    margin-left: 8%;
+.whatsappchat{
+    position: -webkit-sticky;
+    position: sticky;
+
+    left:2% !important;
+    bottom:3.5% !important;
+    border-color: black;
+    clip-path: circle(60%);
 }
 
-.whatsappchat{
-    position: fixed;
-    bottom: 05% !important;
-    left: 03% !important
+.profile-image{
+    width: 125px;
+    height: 125px;
+    padding: 5px;
+}
+
+.image-wrap{
+    background: #020203;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: -40px;
+    top: -40px;
+    z-index: -1
+}
+
+.about_section {
+    padding: 60px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.upbutton{
+    width: 30%;
+}
+
+.textdata{
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #020203;
 }

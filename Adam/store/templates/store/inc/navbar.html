@@ -1,20 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       
-      <a class="navbar-brand" href="#">ADAM DICH</a>
+      <a class="navbar-brand" href="{% url 'home' %}">ADAM DICH</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
       <div class="search-bar">
-        <form action="{% url 'search-products' %}" method="POST">
+        <form action="{% url 'search-products' %}" method="POST" id="searchform">
           {% csrf_token %}
           <div class="input-group">
             <input type="search" required class="form-control" name="productsearch" id="searchproducts" placeholder="Search Products">
             <button type="submit" class="input-group-text"><i class="fa fa-search"></i></button>
           </div>
-        </form>
+             </form>
       </div>
+
+    <style>
+        #searchform{
+            width:500px !important;
+        }
+    </style>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
@@ -43,7 +49,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="{% url 'myorders' %}">My Order</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="{% url 'profile' user.username %}">My Account</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="{% url 'logoutpage' %}">Logout</a></li>
             </ul>

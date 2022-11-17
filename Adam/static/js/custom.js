@@ -44,6 +44,7 @@ $(document).ready(function ()
             },
             success: function (response) {
                 alertify.success(response.status)
+
         
             }
         });
@@ -139,4 +140,12 @@ $(document).ready(function ()
         
     });
 
+});
+
+
+
+$('.addToCartBtnbeforesize').click(function (e) { 
+    e.preventDefault();
+
+    alertify.success('Select the size of the product')
 });

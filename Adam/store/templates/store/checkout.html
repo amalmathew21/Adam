@@ -71,6 +71,7 @@
                                 <thead>
                                     <tr>
                                         <th> Product </th>
+                                        <th>Size</th>
                                         <th> Qty </th>
                                         <th> Price </th>
                                     </tr>
@@ -81,6 +82,7 @@
                                                     <img src='{{item.product.image.url}}' height='50px' class='me-2' width='50px'>
                                                     {{item.product.name}} 
                                                 </td>
+                                                <td> {{item.product.size}} </td>
                                                 <td> {{item.product_qty}} </td>
                                                 <td> {{item.product.selling_price | stringformat:'d'}} </td>
                                             </tr>

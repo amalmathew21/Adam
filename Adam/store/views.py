@@ -27,7 +27,7 @@ def collectionsview(request,name):
 def productview(request,cate_name,prod_name):
     if(Category.objects.filter(name=cate_name,status=0)):
         if(Product.objects.filter(name=prod_name,status=0)):
-            products = Product.objects.filter(name=prod_name,status=0).first
+            products = Product.objects.filter(name=prod_name,status=0).first()
             context = {'products':products}
             
         else:
@@ -36,6 +36,7 @@ def productview(request,cate_name,prod_name):
     else:
         messages.error(request, "No such category found")
         return redirect('collections')
+    
     return render(request,'store/products/view.html',context)
 
 

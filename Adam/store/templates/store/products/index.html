@@ -23,7 +23,7 @@
                             <a href="{% url 'productview' item.category.name item.name %}">
                             <div class="card-body">
                                 <div class="category-image">
-                                    <img src="{{item.image.url}}" alt="Product image" class="w-70"/>
+                                    <img src={{item.image.url}} alt="Product image" class="w-100 h-100"/>
                                 </div>
                                 <h4 class="text-center">{{item.name}}</h4>
                                 <span class="float-start">  {{ item.orginal_price | stringformat:'d'}}</span>

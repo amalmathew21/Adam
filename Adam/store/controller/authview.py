@@ -84,7 +84,8 @@ def logoutpage(request):
 def profile(request, username):
     if request.method == "POST":
         user = request.user
-        form = UserUpdateForm(request.POST, request.FILES, instance=user)
+        file_data = request.FILES or None
+        form = UserUpdateForm(request.POST, file_data, instance=user)
         if form.is_valid():
             user_form = form.save()
             messages.success(request, f'{user_form.username}, Your Profile has been updated!')
@@ -92,6 +93,7 @@ def profile(request, username):
 
         for error in list(form.errors.values()):
             messages.error(request, error)
+            print(error)
 
     user = get_user_model().objects.filter(username=username).first()
     if user:
