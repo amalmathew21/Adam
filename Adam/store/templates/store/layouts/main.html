@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
 
-        {% block title %} 
+        {% block title %}
 
-        {% endblock title%}
+        {% endblock title %}
     </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,111 +29,156 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
-    <meta name="referrer"  content="no-referrer-when-downgrade">
+    <meta name="referrer" content="no-referrer-when-downgrade">
 
     <style>
-        *{
+        * {
             font-family: 'Roboto', sans-serif;
         }
-        a{
+
+        a {
             text-decoration: none;
         }
-        .product-viewtag{
+
+        .product-viewtag {
             background-color: red;
             color: #fff;
             font-size: 11px;
             line-height: 1;
             position: absolute;
-            text-align : center;
+            text-align: center;
             text-transform: uppercase;
             top: 22px;
             margin-left: 17.5rem;
             padding: 7px 10px;
-            font-weight:600;
-            min-width:45px;
+            font-weight: 600;
+            min-width: 45px;
 
         }
-        .active{
-            font-weight:1000;
+
+        .active {
+            font-weight: 1000;
         }
 
     </style>
 
 </head>
 <body>
-    {% include  'store/inc/navbar.html' %}
+{% include  'store/inc/navbar.html' %}
 
 
-    {% block content %}
-    
-    {% endblock content %}
+{% block content %}
 
-    <a href="https://wa.me/+918078310549?text=I'm%20inquiring%20about%20the%20adam%20dich" target="_blank" class="whatsappchat">
-        <img src="{% static '/images/whatsapp.png' %}" alt="whatsapp" width="50px"/>
-    </a>
-
-     {% comment %} Jquery {% endcomment %}
-    <script src="{% static '/js/jquery-3.6.1.min.js' %}"></script>
-
-     {% comment %} Custom js {% endcomment %}
-    <script src="{% static '/js/custom.js' %}"></script>
-
-    {% comment %} Bootstrap {% endcomment %}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+{% endblock content %}
 
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/63674fb7b0d6371309cd8781/1gh5ouptu';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
 
-     {% comment %} Alertify {% endcomment %}
-    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<section>
+    {% comment %} <div class="social-media-button">
+        <a href="#" class="facebook"><i
+                class="fa fa-facebook"></i>
+            <span class="tooltip">Facebook</span></a>
+        <a href="#" class="linkedin"><i
+                class="fa fa-linkedin"></i></a>
+        <a href="https://wa.me/+918078310549?text=I'm%20inquiring%20about%20the%20adam%20dich" target="_blank"
+        class="whatsapp"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://instagram.com/adam_dich___?igshid=YmMyMTA2M2Y=" class="instagram"><i
+                class="fa fa-instagram"></i></a>
+        <a href="#" class="youtube"><i
+                class="fa fa-youtube-play" aria-hidden="true"></i></a>
 
-    <script>
-        var availableTags = [];
-        $.ajax({
-            method : "GET",
-            url: "/product-list",
-            success: function (response) 
-            {
-                startautocomplete(response);
-            } 
-        });
 
-        function startautocomplete(availableTags)
-        {
-            $( "#searchproducts" ).autocomplete({
-                source: availableTags
-                });
+    </div> {% endcomment %}
+    <div class="wrapper">
+        <a href="#" class="icon twitter">
+            <span class="tooltip">Twitter</span>
+            <span><i class="fa fa-twitter"></i></span>
+        </a>
+        <a href="https://wa.me/+918078310549?text=I'm%20inquiring%20about%20the%20adam%20dich" target="_blank" class="icon whatsapp">
+            <span class="tooltip">WhatsApp</span>
+            <span><i class="fa fa-whatsapp"></i></span>
+        </a>
+        <a href="#" class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <span><i class="fa fa-facebook"></i></span>
+        </a>
+        
+        <a href="https://instagram.com/adam_dich___?igshid=YmMyMTA2M2Y=" class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fa fa-instagram"></i></span>
+        </a>
+        <a href="#" class="icon youtube">
+            <span class="tooltip">YouTube</span>
+            <span><i class="fa fa-youtube"></i></span>
+        </a>
+    </div>
+
+
+</section>
+
+{% comment %} Jquery {% endcomment %}
+<script src="{% static '/js/jquery-3.6.1.min.js' %}"></script>
+
+{% comment %} Custom js {% endcomment %}
+<script src="{% static '/js/custom.js' %}"></script>
+
+{% comment %} Bootstrap {% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/63674fb7b0d6371309cd8781/1gh5ouptu';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+{% comment %} Alertify {% endcomment %}
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+<script>
+    var availableTags = [];
+    $.ajax({
+        method: "GET",
+        url: "/product-list",
+        success: function (response) {
+            startautocomplete(response);
         }
+    });
 
-    </script>
+    function startautocomplete(availableTags) {
+        $("#searchproducts").autocomplete({
+            source: availableTags
+        });
+    }
 
-    <script>
-        alertify.set('notifier','position', 'top-right');
-        {% for msg in messages %}
-            alertify.success('{{msg}}');
-        {% endfor %}
-    </script>
+</script>
+
+<script>
+    alertify.set('notifier', 'position', 'top-right');
+    {% for msg in messages %}
+        alertify.success('{{msg}}');
+    {% endfor %}
+</script>
 
 
-    {% block scripts  %}
-    
-    {% endblock scripts %}
+{% block scripts %}
 
-    {% comment  %} Payment using Razorpay {% endcomment %}
-    <script src ="{% static '/js/checkout.js' %}"></script>
+{% endblock scripts %}
+
+{% comment %} Payment using Razorpay {% endcomment %}
+<script src="{% static '/js/checkout.js' %}"></script>
 </body>
 </html>

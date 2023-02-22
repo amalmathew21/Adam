@@ -1,45 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9991fd92-4a38-4946-a284-4ec386a79250" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Adam/static/images/mainlogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adam/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adam/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/static/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/static/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/backends.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/backends.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adam/static/js/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/static/js/checkout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adam/store/controller/authview.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/controller/authview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/decorators.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/decorators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/migrations/0008_alter_order_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/migrations/0008_alter_order_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/migrations/0009_profile_image_alter_order_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/migrations/0009_profile_image_alter_order_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/activate_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/activate_account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/forgot_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/forgot_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/auth/reset_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/auth/reset_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/collections.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/collections.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/inc/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/inc/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/inc/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/inc/slider.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/inc/slider1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/inc/slider1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/layouts/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/orders/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/orders/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/products/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/templates/store/products/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/templates/store/products/view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/tokens.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/tokens.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Adam/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Adam/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,16 +37,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Amal/Desktop/Adam Dich/AdamDich/Adam/static/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Amal/OneDrive/Desktop/Adam Dich/AdamDich",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Amal\Desktop\Adam Dich\AdamDich\Adam\static\images" />
@@ -80,6 +66,17 @@
       <workItem from="1668525401391" duration="6944000" />
       <workItem from="1668661513262" duration="927000" />
       <workItem from="1668702844929" duration="1751000" />
+      <workItem from="1668758711798" duration="1154000" />
+      <workItem from="1668761564944" duration="2470000" />
+      <workItem from="1668786080712" duration="223000" />
+      <workItem from="1669208234951" duration="1212000" />
+      <workItem from="1669224150835" duration="2617000" />
+      <workItem from="1669262718873" duration="804000" />
+      <workItem from="1669273640260" duration="1099000" />
+      <workItem from="1669371412936" duration="1219000" />
+      <workItem from="1669528782262" duration="752000" />
+      <workItem from="1669901295185" duration="28000" />
+      <workItem from="1677082127759" duration="2402000" />
     </task>
     <servers />
   </component>

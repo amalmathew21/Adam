@@ -57,8 +57,9 @@ def loginpage(request):
             )
             if user is not None:
                 login(request, user)
-                messages.success(request, f"Hello <b> {user.username}</b>! You have been succesfully logged in ")
+                messages.success(request, f"Hello <b> {user.username} </b> ! You have been succesfully logged in ")
                 return redirect("/")
+
 
         else:
             for key, error in list(form.errors.items()):
